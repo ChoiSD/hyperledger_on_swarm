@@ -176,7 +176,7 @@ func GenService(dockerCompose *DockerCompose, domainName string, serviceName str
 			service.Environment[9]  = "ORDERER_GENERAL_TLS_CERTIFICATE=/var/hyperledger/orderer/tls/server.crt"
 			service.Environment[10] = "ORDERER_GENERAL_TLS_ROOTCAS=[/var/hyperledger/orderer/tls/ca.crt]"
 			service.Environment[11] = "ORDERER_KAFKA_RETRY_SHORTINTERVAL=1s"
-			service.Environment[12] = "ORDERER_KAFAK_RETRY_SHORTTOTAL=30s"
+			service.Environment[12] = "ORDERER_KAFKA_RETRY_SHORTTOTAL=30s"
 			service.Environment[13] = "ORDERER_KAFKA_VERBOSE=true"
 
 			service.WorkingDir = "/opt/gopath/src/github.com/hyperledger/fabric"
